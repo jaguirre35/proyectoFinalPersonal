@@ -1,4 +1,19 @@
+import { Footer } from "../shared/Footer/Footer"
+import { useNavigate } from "react-router-dom" 
+
 export function Mercancia(){
+
+    //Activamos la navegacion enre componentes
+    //cuando se de un evento
+    let navegacion=useNavigate()
+
+
+    //que hago cuando se escuche el evento
+    function detectarEvento(productoSeleccionado){
+        navegacion('/tienda',{
+            state:{productoSeleccionado}
+        })
+    }
 
     let titulo="Productos de la banda"
     let productos=[
@@ -37,24 +52,31 @@ export function Mercancia(){
     return(
         <>
         <h1>{titulo}</h1>
-        <div class="container">
-            <div class="row row-col-1 row-cols-md-3 g-5">
+        <div className="container">
+            <div className="row row-col-1 row-cols-md-3 g-5">
 
                 {
-                    productos.map(function(producto){
+                    productos.map(function(producto,id){
                         return(
-                            <>
-                            <div class="col">
+                            <div key={id}>
+                            <div className="col h-100">
                                 
-                                <div class="card h-100 shadow">
-                                    <img src={producto.foto} alt="img" class="h-100 img-fluid w-100"></img>
+                                <div className="card h-100 shadow">
+                                    <img src={producto.foto} alt="img" className="img-fluid w-100"></img>
                                     <h3>{producto.nombre}</h3>
                                     <br/>
                                     <h5>{"Precio $" + producto.precio}</h5>
+
+
+                                    <button className="btn btn-primary mx-5 my-3" onClick={
+                                        function(){
+                                            detectarEvento(producto)
+                                        }
+                                    }>Ampliar</button>
                                 </div>
 
                             </div>
-                            </>
+                            </div>
                         )
                     })
                 }
