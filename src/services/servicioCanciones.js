@@ -2,8 +2,8 @@
 
 export async function servicioCancionesTop(){
 
-    //PA´ DONDE VAS
-    //1. 
+    //1. PA´ DONDE VAS
+    // 
 
     const URL = "https://api.spotify.com/v1/artists/7cjh6y0V9SsyCrWSXTzwOs/top-tracks?market=US"
 
@@ -12,13 +12,14 @@ export async function servicioCancionesTop(){
 
     const PETICION = {
         method: "GET",
-        headers:{Authorization:"Bearer BQABeTtUDqF6uuCHic-DNwfsZ2Rlgq92kZfyZV0ld_RN_0sRJcRcxjMyqRMPvAw3hQq_15mJkyVP0F0GbLyGbKGHHKCLpofrb7PDOWfNQKU-S9Im7TrDvQJvwhKHrejvIQUdLeRC45o0_SElO_HeiJP8ULvbXRuy5qAt_mFFbDtU3ivUs_GaKYfdqVra4rNcmzo"}
+        headers:{Authorization:"Bearer BQAayZTcUC_bjKCyKzrVdtNZfCGsXUGWuOFUWmYDdrcOvObtjhtd21b2AuD2H5_OJVbDtGEhvg0nwSlsveMCr6h4OTEvostld2gexNbYoMnfudVaWDMb75mFFnozPoq0KCwtvTjltBUnQ1J9lTo05hXp51G0NaLlnCNhMl-1HcWU6g2oSXnGZhKlFBpf-7aDmPI  "}
     }
     //3. NOS VAMOS PAL RESTAURANTE
 //CONSUMIMOS EL API
 let respuesta=await fetch(URL,PETICION)
 let canciones=await respuesta.json()
 
-console.log(canciones)
+return(canciones)
+
 }
 
