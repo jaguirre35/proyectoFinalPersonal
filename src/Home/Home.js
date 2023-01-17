@@ -19,58 +19,54 @@ export function Home() {
               <img src="https://firebasestorage.googleapis.com/v0/b/spotifyjdab.appspot.com/o/rbd3.jpg?alt=media&token=1feeabd0-f42b-421e-9092-afc1c5572982" className="img-fluid w-100">
               </img>
             </div>
-            <div className="col-12 col-md-4">
-                <div className="row">
-                    <div className="col-4 text-end">
-                    <i className="bi bi-vinyl-fill fs-1"></i><br/>
-                    </div>
-                    <div className="col-8">
-                        <div>
-                            <h1>Medellin</h1>
-                            <h2>Diciembre 2</h2>
-                        </div>
+            <div className="col-12 col-md-4 border-start align-self-center bg-dark text-white p-5">
+                            <div className="row">
+                                <div className="col-12 text-center">
+                                    <h1 className="fw-bold">Proximos Conciertos</h1>
+                                    <hr></hr>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-3 text-end">
+                                 <i className="bi bi-vinyl-fill icono fw-bold"></i>
+                                </div>
+                                <div className="col-9 text-start align-self-center">
+                                    <h3 className="fw-bold">Med</h3>
+                                    <h5>Dec 2</h5>
+                                </div>
+                            </div>  
 
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-4 text-end">
-                    <i className="bi bi-vinyl-fill fs-1"></i><br/>
-                    </div>
-                    <div className="col-8">
-                        <div>
-                            <h1>Medellin</h1>
-                            <h2>Diciembre 2</h2>
-                        </div>
+                            <div className="row">
+                                <div className="col-3 text-end">
+                                 <i className="bi bi-vinyl-fill icono fw-bold"></i>
+                                </div>
+                                <div className="col-9 text-start align-self-center">
+                                    <h3 className="fw-bold">Cali</h3>
+                                    <h5>Dec 3</h5>
+                                </div>
+                            </div>  
 
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-4 text-end">
-                    <i className="bi bi-vinyl-fill fs-1"></i><br/>
-                    </div>
-                    <div className="col-8">
-                        <div>
-                            <h1>Medellin</h1>
-                            <h2>Diciembre 2</h2>
-                        </div>
+                            <div className="row">
+                                <div className="col-3 text-end">
+                                 <i className="bi bi-vinyl-fill icono fw-bold"></i>
+                                </div>
+                                <div className="col-9 text-start align-self-center">
+                                    <h3 className="fw-bold">Bog</h3>
+                                    <h5>Dec 4</h5>
+                                </div>
+                            </div>  
 
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-4 text-end">
-                    <i className="bi bi-vinyl-fill fs-1"></i><br/>
-                    </div>
-                    <div className="col-8">
-                        <div>
-                            <h1>Medellin</h1>
-                            <h2>Diciembre 2</h2>
-                        </div>
+                            <div className="row">
+                                <div className="col-3 text-end">
+                                 <i className="bi bi-vinyl-fill icono fw-bold"></i>
+                                </div>
+                                <div className="col-9 text-start align-self-center">
+                                    <h3 className="fw-bold">Barr</h3>
+                                    <h5>Dec 5</h5>
+                                </div>
+                            </div>  
 
-                    </div>
-                </div>
-            
-            
-            </div>
+                        </div>
           </div>
         </div>
       </section>

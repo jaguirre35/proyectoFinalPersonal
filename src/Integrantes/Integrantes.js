@@ -47,7 +47,7 @@ export function Integrantes(){
                             <div className="row my-5">
                                 
                                 <div className="col-6 card h-100 shadow">
-                                    <img src={integrante.foto} className="img-fluid w-100 h-100"></img>
+                                    <img src={integrante.foto} className="img-fluid w-100"></img>
                                 </div>
                                 <div className="col-6 my-5">
                                     <h1> {integrante.nombre} </h1>

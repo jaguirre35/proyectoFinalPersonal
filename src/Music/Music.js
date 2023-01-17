@@ -42,11 +42,11 @@ export function Music(){
                                     <div key={id}>
                                         <div className="col h-100">
                                             <div className="card h-100 shadow">
-                                                <img className="p-1 w-100 img-fluid" src={cancion.album.images[0].url}></img>
-                                                <h1 className="pb-1 text-center">{cancion.name}</h1>
-                                                <audio className="m-1 w-100" controls src={cancion.preview_url}> </audio>
+                                                <img className="w-100 img-fluid" src={cancion.album.images[0].url}></img>
+                                                <h4 className="text-center my-2">{cancion.name}</h4>
+                                                <audio className="w-75 d-block mx-auto" controls src={cancion.preview_url}> </audio>
                                                 
-                                                <h2>Popularidad: {cancion.popularity}</h2>
+                                                <h6 className="text-center my-3">Popularidad: {cancion.popularity}</h6>
                                             </div>
                                             
                                         </div>
